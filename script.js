@@ -181,10 +181,8 @@ function validateContactForm(event) {
     }
   }
 
-  if (!isValid) {
-    event.preventDefault();
+ event.preventDefault();
   }
-}
 
 document.addEventListener("DOMContentLoaded", () => {
   renderFilterButtons();
