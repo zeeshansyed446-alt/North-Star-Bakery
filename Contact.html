@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>North Star Bakery | Contact</title>
+</head>
+<body>
+  <header>
+    <p>North Star Bakery</p>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="Products.html">Products</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact &amp; Pre-Orders</h1>
+    <p>Have a question about daily loaves, want to check availability for a weekend table, or need a cake inquiry? Send a message below or stop by the bakery.</p>
+
+    <section aria-labelledby="shop-info-heading">
+      <h2 id="shop-info-heading">Bakery Details</h2>
+      <p><strong>Address:</strong> 214 Maple Street, Suite B</p>
+      <p><strong>Phone:</strong> (555) 234-8910</p>
+      <p><strong>Email:</strong> hello@northstarbakery.example</p>
+      <p><strong>Hours:</strong> Tuesday through Sunday, 6:30 AM to 3:00 PM (Closed Mondays)</p>
+    </section>
+
+    <section aria-labelledby="form-heading">
+      <h2 id="form-heading">Send a Note or Pre-Order Request</h2>
+      <form action="#" method="post">
+        <p>
+          <label for="customer-name">Full Name</label><br>
+          <input type="text" id="customer-name" name="customer-name" required>
+        </p>
+
+        <p>
+          <label for="customer-email">Email Address</label><br>
+          <input type="email" id="customer-email" name="customer-email" required>
+        </p>
+
+        <p>
+          <label for="inquiry-type">Topic</label><br>
+          <select id="inquiry-type" name="inquiry-type" required>
+            <option value="">Select an option</option>
+            <option value="pre-order">Bread or Pastry Pre-Order</option>
+            <option value="cake">Cake Inquiry</option>
+            <option value="hours-menu">Hours or Daily Menu Question</option>
+            <option value="general">General Feedback</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="message">Details or Pickup Date</label><br>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </p>
+
+        <p>
+          <button type="submit">Send Request</button>
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; North Star Bakery. Baked fresh daily.</p>
+  </footer>
+</body>
+</html>
