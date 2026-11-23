@@ -181,7 +181,15 @@ function validateContactForm(event) {
     }
   }
 
- event.preventDefault();
+ event.preventDefault(); 
+  if (isValid) {
+  const statusEl = document.getElementById("nsb-form-status");
+  if (statusEl) {
+    statusEl.textContent = "Thank you! Your request has been noted.";
+  }
+  event.target.reset() ;
+}
+
   }
 
 document.addEventListener("DOMContentLoaded", () => {
